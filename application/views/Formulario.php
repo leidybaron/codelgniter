@@ -13,7 +13,7 @@
                             <th>Estacion</th>
                             <th>Descripcion</th>
                             <th>Latitud</th>
-                            <th>Longuitud</th>
+                            <th>Longitud</th>
                         </tr>
                     </thead>
                     <tbody id="userData">
@@ -24,7 +24,7 @@
                             <td><?php echo $estacion['estacion']; ?></td>
                             <td><?php echo $estacion['descripcion']; ?></td>
                             <td><?php echo $estacion['latitud']; ?></td>
-                            <td><?php echo $estacion['longuitud']; ?></td>
+                            <td><?php echo $estacion['longitud']; ?></td>
                         </tr>
                             <?php }
                         }?>
