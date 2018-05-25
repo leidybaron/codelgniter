@@ -38,6 +38,12 @@ class Procesador extends CI_Controller
         
         $insertar = $this->estacion->insertarRuta($datosFormulario);
        
+         if($insertar){
+            $this->session->set_userdata('success_msg', 'La ruta fue insertada correctamente.');
+            redirect('/Procesador');
+         }else{
+                $data['error_msg'] = 'No se pudo insertar la ruta.';
+            }
             
            
         $data['post'] = $datosFormulario;
@@ -49,7 +55,8 @@ class Procesador extends CI_Controller
     }
     
    
-    
+   
+
     
 
     
